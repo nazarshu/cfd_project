@@ -1,0 +1,9 @@
+.venv*/
+__pycache__/
+.ipynb_checkpoints/
+# OpenFOAM output that can be regenerated
+openfoam_cases/**/[1-9]*/
+openfoam_cases/**/processor*/
+openfoam_cases/**/constant/polyMesh/
+openfoam_cases/**/*.foam
+openfoam_cases/**/log.*
