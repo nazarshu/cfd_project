@@ -17,19 +17,19 @@ The three terms are the flow through the rotor area, the flow through the entrai
 **Eq. (2): wake velocity.** Solving (1) for $v$ gives
 
 $$
-v = u\\left\[1 - \\left(1 - \\frac{v\_0}{u}\\right)\\left(\\frac{r\_0}{r}\\right)^{2}\\right].
+v = u\left[1 - \left(1 - \frac{v_0}{u}\right)\left(\frac{r_0}{r}\right)^{2}\right].
 $$
 
 With a linearly expanding wake, $r = r\_0 + \\alpha x$, and the classical value $v\_0 = u/3$:
 
 $$
-v = u\\left\{1 - \\frac{2}{3}\\left(\\frac{r\_0}{r\_0 + \\alpha x}\\right)^{2}\\right\}
+v = u\left\{1 - \frac{2}{3}\left(\frac{r_0}{r_0 + \alpha x}\right)^{2}\right\}
 $$
 
 **Eq. (2) with the induction factor $a$.** Classical (actuator-disc) theory gives $v\_0 = (1-2a),u$, so the initial deficit is $1 - v\_0/u = 2a$ and
 
 $$
-v = u\\left{1 - 2a\\left(\\frac{r\_0}{r\_0 + \\alpha x}\\right)^{2}\\right}
+v = u\left{1 - 2a\left(\frac{r_0}{r_0 + \alpha x}\right)^{2}\right}
 $$
 
 For the Betz value $a = 1/3$ this reduces to Jensen's factor $2a = 2/3$.
