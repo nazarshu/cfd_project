@@ -1,12 +1,6 @@
-# From Jensen (1983) to Katic et al. (1986): the Park wake model
-
-Study notes. Equation numbers in section 1 refer to Jensen's report; section 2 refers to equations of the Katic paper by name, since that paper does not number them.
-
-\---
+# From Jensen (1983) to Katic et al. (1986): turbine wake models
 
 ## 1\. A Note on Wind Generator Interaction — N.O. Jensen (1983)
-
-*Risø-M-2411, Risø National Laboratory, November 1983.*
 
 **Notation.** $u$ is the ambient wind velocity, $r\_0$ the rotor radius, $v\_0$ the velocity just behind the rotor, $x$ the downwind distance, $r$ the wake radius at $x$, $v$ the (uniform) velocity inside the wake, $\\alpha$ the entrainment constant (about $0.1$), and $x\_0$ the spacing between generators in a row.
 
@@ -15,10 +9,10 @@ Study notes. Equation numbers in section 1 refer to Jensen's report; section 2 r
 **Eq. (1): balance across the wake cross-section**
 
 $$
-\\pi r\_0^2, v\_0 + \\pi,(r^2 - r\_0^2),u = \\pi r^2, v
+\pi r_0^2 v_0 + \pi(r^2 - r_0^2)u = \pi r^2 v
 $$
 
-The three terms are the flow through the rotor area at $v\_0$, the flow through the entrained ring of ambient air at $u$, and the total flow through the wake at $x$. Jensen calls it a momentum balance, but it is a balance of volume flow.
+The three terms are the flow through the rotor area, the flow through the entrained ring of ambient air, and the total flow through the wake at $x$. Jensen calls it a momentum balance, but it is a balance of volume flow.
 
 **Eq. (2): wake velocity.** Solving (1) for $v$ gives
 
@@ -29,7 +23,7 @@ $$
 With a linearly expanding wake, $r = r\_0 + \\alpha x$, and the classical value $v\_0 = u/3$:
 
 $$
-v = u\\left{1 - \\frac{2}{3}\\left(\\frac{r\_0}{r\_0 + \\alpha x}\\right)^{2}\\right}
+v = u\\left\{1 - \\frac{2}{3}\\left(\\frac{r\_0}{r\_0 + \\alpha x}\\right)^{2}\\right\}
 $$
 
 **Eq. (2) with the induction factor $a$.** Classical (actuator-disc) theory gives $v\_0 = (1-2a),u$, so the initial deficit is $1 - v\_0/u = 2a$ and
@@ -45,7 +39,7 @@ For the Betz value $a = 1/3$ this reduces to Jensen's factor $2a = 2/3$.
 **Eq. (8): velocity in front of generator $N$ in terms of the one before it**
 
 $$
-\\frac{v\_N}{u} = 1 - \\left(1 - \\frac{1}{3},\\frac{v\_{N-1}}{u}\\right)\\left(\\frac{r\_0}{r\_0 + \\alpha x\_0}\\right)^{2}
+\\frac{v\_N}{u} = 1 - \\left(1 - \\frac{1}{3}\\frac{v\_{N-1}}{u}\\right)\\left(\\frac{r\_0}{r\_0 + \\alpha x\_0}\\right)^{2}
 $$
 
 **Eq. (9): shorthand notation**
@@ -77,7 +71,7 @@ $$
 Combining (10) and (11) gives the explicit expression (a geometric sum):
 
 $$
-y\_N = 1 - \\frac{2k}{3},\\frac{1 - (k/3)^N}{1 - k/3}
+y\_N = 1 - \\frac{2k}{3}\\frac{1 - (k/3)^N}{1 - k/3}
 $$
 
 **Eq. (12): asymptotic velocity.** Since $(k/3)^N \\to 0$ quickly, with $\\chi \\equiv \\tfrac13 \\left(\\dfrac{r\_0}{r\_0 + \\alpha x\_0}\\right)^{2} = \\dfrac{k}{3}$ (written $x$ in the paper):
@@ -91,8 +85,6 @@ For $r\_0 = 10$ m and $\\alpha = 0.1$, the paper finds $v\_\\infty \\approx 0.65
 \---
 
 ## 2\. A Simple Model for Cluster Efficiency — I. Katic, J. Højstrup, N.O. Jensen (1986)
-
-*EWEC'86 Proceedings, Vol. 1, pp. 407–410 (Rome, 7–9 October 1986; DTU Orbit lists the proceedings as 1987).*
 
 ### 2.1 Bridging the two papers
 
