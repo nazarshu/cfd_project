@@ -23,16 +23,16 @@ $$
 With a linearly expanding wake, $r = r\_0 + \\alpha x$, and the classical value $v\_0 = u/3$:
 
 $$
-v = u\left\{1 - \frac{2}{3}\left(\frac{r_0}{r_0 + \alpha x}\right)^{2}\right\}
+v = u\left\lbrace 1 - \frac{2}{3}\left(\frac{r_0}{r_0 + \alpha x}\right)^{2}\right\rbrace
 $$
 
-**Eq. (2) with the induction factor $a$.** Classical (actuator-disc) theory gives $v\_0 = (1-2a),u$, so the initial deficit is $1 - v\_0/u = 2a$ and
+**Eq. (2) with the induction factor $\boldsymbol{a}$.** Actuator-disc theory gives $v\_0 = (1-2a) u$, so the initial deficit is $1 - v\_0/u = 2a$ and
 
 $$
-v = u\left{1 - 2a\left(\frac{r_0}{r_0 + \alpha x}\right)^{2}\right}
+v = u\left\lbrace1 - 2a\left(\frac{r_0}{r_0 + \alpha x}\right)^{2}\right\rbrace
 $$
 
-For the Betz value $a = 1/3$ this reduces to Jensen's factor $2a = 2/3$.
+For the Betz value $a = 1/3$ Jensen's factor becomes $2a = 2/3$.
 
 ### 1.2 Generators in a row
 
