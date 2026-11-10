@@ -71,7 +71,7 @@ $$
 Combining (10) and (11) gives the explicit expression (a geometric sum):
 
 $$
-y\_N = 1 - 2 \\frac{k}{3}\\frac{1 - (k/3)^N}{1 - k/3}
+y\_N = 1 - 2 \  \\frac{k}{3} \ \\frac{1 - (k/3)^N}{1 - k/3}
 $$
 
 **Eq. (12): asymptotic velocity.** Since $(k/3)^N \\to 0$ quickly, with $\\chi = k/3$ (written $x$ in the paper):
@@ -106,14 +106,21 @@ $$
 2a = 1 - \\sqrt{1 - C\_t} \\qquad i.e. \\qquad 2a = 1 - \\frac{U_r}{U} = 1 - \\frac{v_0}{u} \\qquad .
 $$
 
-From Jensen, the velocity deficit downstream at $x$:
+**From Jensen**, the velocity deficit downstream at $x$:
 
 $$
-1 - \frac{v}{u} = 2a\left(\frac{r_0}{r_0 + \alpha x}\right)^{2}
+1 - \frac{v}{u} \  = \  2a \  \left(\frac{r_0}{r_0 + \alpha x}\right)^{2}
 $$
 
-which is the initial velocity deficit scaled by the fraction of rotor area inside the wake 
+which is the initial velocity deficit scaled by the fraction of rotor area inside the wake.
 
+**In Katic** this becomes: 
+
+$$
+1 - \frac{V}{U} \  = \  1 - \\sqrt{1 - C\_t} \  \left(\frac{r_0}{r_0 + \alpha x}\right)^{2}
+$$
+
+<!--
 |Jensen (1983)|Katic (1986)|
 |-|-|
 |$u$|$U$|
@@ -121,66 +128,26 @@ which is the initial velocity deficit scaled by the fraction of rotor area insid
 |$v$|$V$|
 |$\\alpha$|$k$|
 
+This is the paper's expression for $a$. For the Betz limit, $C\_t = 8/9$, so $\\sqrt{1-C\_t} = 1/3$ and $a = 1/3$, which gives back Jensen's $v\_0 = u/3$. -->
 
+**Dependence on wind speed.** $C\_t$ normally varies with wind speed, so the velocity deficit is valid for one wind speed only. This is why the farm efficiency has to be evaluated across the whole range of wind speeds.
 
-This is the paper's expression for $a$. For the Betz limit, $C\_t = 8/9$, so $\\sqrt{1-C\_t} = 1/3$ and $a = 1/3$, which gives back Jensen's $v\_0 = u/3$.
+### 2.2 Interacting wakes
 
-**The meaning of $a$.** The paper defines $a$ as the *initial velocity deficit*, $1 - U\_r/U$, which is also the axial induction factor of the rotor. Note that its equations then require the deficit to equal $2a = 1 - \\sqrt{1-C\_t}$: strictly, $a$ is the induction factor and the initial deficit is $2a$.
+The kinetic energy deficit of the mixed wake is assumed to equal the sum of the energy deficits of each individual wake, evaluated at the downwind position of interest.
 
-**(c) Wake interaction is handled differently.** Instead of Jensen's generator-by-generator recursion (Eqs. 8–12), Katic adds the squared velocity deficits of the individual wakes. See section 2.3.
-
-### 2.2 Wake velocity and velocity deficit
-
-**Momentum (flow) balance, as in Jensen's Eq. (1) but with diameters:**
-
-$$
-D^2 U\_r + (D\_w^2 - D^2),U = D\_w^2, V
-$$
-
-**Wake velocity, as in the paper:**
-
-$$
-\\frac{V}{U} = 1 - \\frac{2a}{\\left(1 + \\dfrac{2kX}{D}\\right)^{2}}
-$$
-
-**Velocity deficit at position $X$, as in the paper (diameter form):**
-
-$$
-1 - \\frac{V}{U} = \\frac{1 - \\sqrt{1 - C\_t}}{\\left(1 + \\dfrac{2kX}{D}\\right)^{2}}
-$$
-
-**The same deficit written with the rotor radius** ($D = 2r\_0$, so $2kX/D = kX/r\_0$):
-
-$$
-1 - \\frac{V}{U} = \\frac{1 - \\sqrt{1 - C\_t}}{\\left(1 + \\dfrac{kX}{r\_0}\\right)^{2}}
-= \\left(1 - \\sqrt{1 - C\_t}\\right)\\left(\\frac{r\_0}{r\_0 + kX}\\right)^{2}
-$$
-
-This is exactly Jensen's Eq. (2) with the fixed factor $2/3$ replaced by $1 - \\sqrt{1 - C\_t}$ (equal to $2/3$ at $C\_t = 8/9$) and $\\alpha$ renamed $k$.
-
-**Dependence on wind speed.** The paper points out that $C\_t$ normally varies with wind speed, so the initial deficit, and hence this relative deficit, is valid for one wind speed only. This is why the farm efficiency has to be evaluated across the whole range of wind speeds.
-
-### 2.3 Interacting wakes (page 408)
-
-**The last four lines of the first column.** The paper states how interacting wakes are treated: the kinetic energy deficit of the mixed wake is assumed to equal the sum of the energy deficits of each individual wake, evaluated at the downwind position being considered.
-
-**Resulting equation (top of the second column).** For two wakes with original velocities $V\_1$ and $V\_2$:
+The resulting velocity by summation of two wakes is thus found by:
 
 $$
 \\left(1 - \\frac{V}{U}\\right)^{2} = \\left(1 - \\frac{V\_1}{U}\\right)^{2} + \\left(1 - \\frac{V\_2}{U}\\right)^{2}
 $$
 
-and for several upstream wakes $i$ acting on the same turbine:
+where $V\_1$ and $V\_2$ represent the two original wake velocities.
 
-$$
-\\left(1 - \\frac{V}{U}\\right)^{2} = \\sum\_i \\left(1 - \\frac{V\_i}{U}\\right)^{2}
-$$
+(The paper talks about *kinetic energy deficit*, but it is actually summing the *squared velocity deficits*)
 
-(The printed formula adds the *squared velocity deficits*; the kinetic energy deficit itself would be $1 - (V/U)^2$.)
+**Saturation of the deficit.** Katic explains that because the deficits are squared, the total velocity deficit in the wake of a line of turbines, or of several rows, quickly settles at an equilibrium level, typically after about 3–4 turbines or rows. This echoes Jensen's results.
 
-**Saturation of the deficit.** Right after that equation, the paper explains that because the deficits are squared, the total velocity deficit in the wake of a line of turbines, or of several rows, quickly settles at an equilibrium level, typically after about 3–4 turbines or rows, and it reports that this agrees well with wind tunnel results. This echoes Jensen's result in section 1.2: there too the term $(k/3)^N$ dies out quickly, so $v\_N$ converges to the asymptote of Eq. (12) after the first few generators.
-
-\---
 
 ## References
 
