@@ -13,7 +13,7 @@ The model replaces the **top-hat** deficit of Jensen and Frandsen with a **Gauss
 If viscous and pressure terms are neglected, mass and momentum conservation applied to the wake give
 
 $$
-\rho \int U_w\,(U_\infty - U_w)\, dA = T, \tag{8}
+\rho \int U_w\,(U_\infty - U_w)\, dA = T \qquad (8)
 $$
 
 where $\\rho$ is the air density, $U\_\\infty$ the incoming wind speed, $U\_w$ the streamwise velocity in the wake, $dA$ an element of the wake cross-section, and $T$ the thrust force on the turbine. The left-hand side is the momentum flux the wake has lost. The thrust is
