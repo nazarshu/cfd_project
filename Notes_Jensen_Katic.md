@@ -1,6 +1,6 @@
 # From Jensen (1983) to Katic et al. (1986): turbine wake models
 
-## 1\. A Note on Wind Generator Interaction — N.O. Jensen (1983)
+## 1\. *A Note on Wind Generator Interaction* — N.O. Jensen (1983)
 
 **Notation.** $u$ is the ambient wind velocity, $r\_0$ the rotor radius, $v\_0$ the velocity just behind the rotor, $x$ the downwind distance, $r$ the wake radius at $x$, $v$ the (uniform) velocity inside the wake, $\\alpha$ the entrainment constant (about $0.1$), and $x\_0$ the spacing between generators in a row.
 
@@ -82,7 +82,7 @@ $$
 
 For $r\_0 = 10$ m, $x\_0 = 100$ m and $\\alpha = 0.1$, the paper finds $v\_\\infty \\approx 0.82u$ .
 
-## 2\. A Simple Model for Cluster Efficiency — I. Katic, J. Højstrup, N.O. Jensen (1986)
+## 2\. *A Simple Model for Cluster Efficiency* — I. Katic, J. Højstrup, N.O. Jensen (1986)
 
 ### 2.1 Model extension
 
