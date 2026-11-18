@@ -102,7 +102,7 @@ $$
 - **Correction to $\varepsilon$.** Extrapolating the LES fits back to $x = 0$ shows that Eq. (19) has the right trend (higher $C_T$ gives larger $\varepsilon$) but overestimates the value. The cause is Frandsen's assumption that the expanded wake area applies right at $x = 0$, when it really applies slightly downstream. The authors recommend
 
 $$
-\varepsilon = 0.2\,\sqrt{\beta}. \qquad (21)
+\varepsilon = 0.2\ \sqrt{\beta} \qquad (21)
 $$
 
 - **Accuracy.** The Gaussian model matches the hub-height deficit and vertical profiles well. The top-hat models (Jensen, Frandsen) underestimate the deficit at the wake centre and overestimate it at the edge.
